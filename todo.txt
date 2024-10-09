@@ -1,0 +1,4 @@
+TODO:crear los seeders para las tablas 
+TODO:truncate info of tables
+TODO: modify column stock_minimum in products table set value not null in true
+TODO: add seeders for tables

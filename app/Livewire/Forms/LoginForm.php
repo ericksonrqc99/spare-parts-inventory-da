@@ -23,7 +23,6 @@ class LoginForm extends Form
 
     /**
      * Attempt to authenticate the request's credentials.
-     *
      * @throws \Illuminate\Validation\ValidationException
      */
     public function authenticate(): void
@@ -67,6 +66,6 @@ class LoginForm extends Form
      */
     protected function throttleKey(): string
     {
-        return Str::transliterate(Str::lower($this->email).'|'.request()->ip());
+        return Str::transliterate(Str::lower($this->email) . '|' . request()->ip());
     }
 }
